@@ -1,17 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import HomeSection from "./sections/HomeSection";
+import AboutSection from "./sections/AboutSection";
+import UpcomingSection from "./sections/UpcomingSection";
+import RecordingsSection from "./sections/RecordingsSection";
+import TestimonialsSection from "./sections/TestimonialsSection";
+import Header from "./Header";
+import { useState } from "react";
+const App = () => {
+  const [activeTab, setActiveTab] = useState("Home");
 
-function App() {
+  // Simple conditional or switch
+  const renderContent = () => {
+    switch (activeTab) {
+      case "Home":
+        return <HomeSection />;
+      case "About":
+        return <AboutSection />;
+      case "Upcoming":
+        return <UpcomingSection />;
+      // TODO - these
+      // case "Recordings":
+      //   return <RecordingsSection />;
+      // case "Testimonials":
+      //   return <TestimonialsSection />;
+      default:
+        return <HomeSection />;
+    }
+  };
 
   return (
-    <>
-      <div>
-        <p className="text-xl font-bold text-blue-300">This website is currently under active development. Check back again soon!</p>
-      </div>
-    </>
-  )
-}
+    // Remove min-h-screen if you don't need it
+    <div className="bg-white text-black">
+      <Header activeTab={activeTab} onNavClick={setActiveTab} />
+      {/* Reduced to pt-16 */}
+      <main className="pt-16 max-w-screen-xl mx-auto px-4">
+        {renderContent()}
+      </main>
+    </div>
+  );
+};
 
-export default App
+export default App;
