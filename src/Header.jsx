@@ -19,7 +19,9 @@ const Header = ({ activeTab, onNavClick }) => {
         <div className="flex items-center space-x-3">
           <span
             style={{ fontFamily: "'Mea Culpa', cursive" }}
-            className="text-2xl"
+            className="text-2xl cursor-pointer"
+            // Make it behave like a Home button:
+            onClick={() => onNavClick('Home')}
           >
             ESB
           </span>

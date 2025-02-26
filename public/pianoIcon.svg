@@ -1,197 +1,39 @@
 <!-- public/pianoIcon.svg -->
 <svg
-    className="w-10 h-auto"
-    viewBox="0 0 140 80"
-    xmlns="http://www.w3.org/2000/svg"
+  width="64"
+  height="64"
+  viewBox="0 0 140 50"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="xMidYMid meet"
 >
-    {/* White keys (7) */}
-    <rect
-    id="white-key-C"
-    x="0"
-    y="0"
-    width="20"
-    height="80"
-    fill="white"
-    stroke="black"
-    strokeWidth="1"
-    onClick={() => notes[0]()}
-    />
-    <rect
-    id="white-key-D"
-    x="20"
-    y="0"
-    width="20"
-    height="80"
-    fill="white"
-    stroke="black"
-    strokeWidth="1"
-    onClick={() => notes[2]()}
-    />
-    <rect
-    id="white-key-E"
-    x="40"
-    y="0"
-    width="20"
-    height="80"
-    fill="white"
-    stroke="black"
-    strokeWidth="1"
-    onClick={() => notes[4]()}
-    />
-    <rect
-    id="white-key-F"
-    x="60"
-    y="0"
-    width="20"
-    height="80"
-    fill="white"
-    stroke="black"
-    strokeWidth="1"
-    onClick={() => notes[5]()}
-    />
-    <rect
-    id="white-key-G"
-    x="80"
-    y="0"
-    width="20"
-    height="80"
-    fill="white"
-    stroke="black"
-    strokeWidth="1"
-    onClick={() => notes[7]()}
-    />
-    <rect
-    id="white-key-A"
-    x="100"
-    y="0"
-    width="20"
-    height="80"
-    fill="white"
-    stroke="black"
-    strokeWidth="1"
-    onClick={() => notes[9]()}
-    />
-    <rect
-    id="white-key-B"
-    x="120"
-    y="0"
-    width="20"
-    height="80"
-    fill="white"
-    stroke="black"
-    strokeWidth="1"
-    onClick={() => notes[11]()}
-    />
+  <!-- White keys (7) -->
+  <rect x="0"   y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="20"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="40"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="60"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="80"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="100" y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="120" y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
 
-    {/* Black keys (5) */}
-    <g
-    id="black-key-C#"
-    transform="translate(14, 0)"
-    onClick={() => notes[1]()}
-    >
-    <rect
-        x="0"
-        y="0"
-        width="12"
-        height="50"
-        fill="black"
-    />
-    <line
-        x1="0"
-        y1="50"
-        x2="12"
-        y2="50"
-        stroke="white"
-        strokeWidth="1"
-    />
-    </g>
-
-    <g
-    id="black-key-D#"
-    transform="translate(34, 0)"
-    onClick={() => notes[3]()}
-    >
-    <rect
-        x="0"
-        y="0"
-        width="12"
-        height="50"
-        fill="black"
-    />
-    <line
-        x1="0"
-        y1="50"
-        x2="12"
-        y2="50"
-        stroke="white"
-        strokeWidth="1"
-    />
-    </g>
-
-    {/* No black key between E and F */}
-    <g
-    id="black-key-F#"
-    transform="translate(74, 0)"
-    onClick={() => notes[6]()}
-    >
-    <rect
-        x="0"
-        y="0"
-        width="12"
-        height="50"
-        fill="black"
-    />
-    <line
-        x1="0"
-        y1="50"
-        x2="12"
-        y2="50"
-        stroke="white"
-        strokeWidth="1"
-    />
-    </g>
-
-    <g
-    id="black-key-G#"
-    transform="translate(94, 0)"
-    onClick={() => notes[8]()}
-    >
-    <rect
-        x="0"
-        y="0"
-        width="12"
-        height="50"
-        fill="black"
-    />
-    <line
-        x1="0"
-        y1="50"
-        x2="12"
-        y2="50"
-        stroke="white"
-        strokeWidth="1"
-    />
-    </g>
-
-    <g
-    id="black-key-A#"
-    transform="translate(114, 0)"
-    onClick={() => notes[10]()}
-    >
-    <rect
-        x="0"
-        y="0"
-        width="12"
-        height="50"
-        fill="black"
-    />
-    <line
-        x1="0"
-        y1="50"
-        x2="12"
-        y2="50"
-        stroke="white"
-        strokeWidth="1"
-    />
-    </g>
+  <!-- Black keys (5) -->
+  <g transform="translate(14, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(34, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(74, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(94, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(114, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
 </svg>

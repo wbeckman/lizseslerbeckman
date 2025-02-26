@@ -90,7 +90,7 @@ const UpcomingSection = () => {
         )}
 
         {!loading && !error && events.length > 0 && (
-        <ul className="mx-auto w-[50%] space-y-4 text-center">
+        <ul className="mx-auto md:w-[60%] w-[80%] space-y-4 text-center">
             {events.map((event) => (
             <li key={event.id} className="border-b border-gray-200 pb-4">
                 <h2 className="font-[Instrument_Sans] text-lg font-medium mb-2">
