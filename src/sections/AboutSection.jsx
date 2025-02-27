@@ -26,7 +26,7 @@ const AboutSection = () => (
             Caravan. She has also served as a clinician at Wellesley, Dickinson,
             and Allegheny Colleges, as well as in the Baltimore City Schools.
             Recently Liz has been collaborating in North West Pennsylvania with
-            musicians including David van Amburg, Kelly Armor, and Phil
+            musicians including David VanAmburg, Kelly Armor, and Phil
             Papotnik.
           </p>
           <p>
