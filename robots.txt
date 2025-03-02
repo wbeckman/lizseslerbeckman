@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lizseslerbeckman.com/sitemap.xml
+
