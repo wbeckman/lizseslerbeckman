@@ -1,0 +1,39 @@
+<!-- public/pianoIcon.svg -->
+<svg
+  width="64"
+  height="64"
+  viewBox="0 0 140 50"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <!-- White keys (7) -->
+  <rect x="0"   y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="20"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="40"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="60"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="80"  y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="100" y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+  <rect x="120" y="0" width="20" height="80" fill="white" stroke="black" stroke-width="1" />
+
+  <!-- Black keys (5) -->
+  <g transform="translate(14, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(34, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(74, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(94, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+  <g transform="translate(114, 0)">
+    <rect x="0" y="0" width="12" height="50" fill="black" />
+    <line x1="0" y1="50" x2="12" y2="50" stroke="white" stroke-width="1" />
+  </g>
+</svg>
