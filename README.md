@@ -1,15 +1,22 @@
-# React + Vite
+# lizseslerbeckman.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio site for Liz Sesler-Beckman, pianist in Erie, PA. Built with React + Vite, hosted on GitHub Pages.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install dependencies and start the local dev server:
 
+```bash
+npm install
+npm run dev
+```
 
-# Dev Notes
+## Deployment
 
-Deployment is done through `npm run deploy`, which deploys all static files to Github on the `gh-pages` branch.
+Deployment is automatic — **just push to `main`**. GitHub Actions will build the site and deploy it to GitHub Pages. You can monitor deploys in the Actions tab of the repository.
 
-Then, Github is configured to deploy to pages from the `gh-pages` branch (look in Settings --> Pages).
+GitHub Pages is configured to deploy via GitHub Actions (Settings → Pages → Source: GitHub Actions).
+
+## Calendar
+
+Upcoming gigs are pulled from a public Google Calendar iCal feed, proxied through a Cloudflare Worker at `weathered-mode-3913.wbeckman91715.workers.dev` to handle CORS. No API key required — the calendar is public. If the Worker ever needs to be updated, log in to dash.cloudflare.com → Workers & Pages.
