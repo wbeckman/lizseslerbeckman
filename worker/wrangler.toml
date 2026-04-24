@@ -1,0 +1,10 @@
+name = "weathered-mode-3913"
+main = "worker.js"
+compatibility_date = "2026-04-24"
+
+[[kv_namespaces]]
+binding = "CALENDAR_CACHE"
+id = "54647929bbce4d03b7a0b51b879d58ab"
+
+[triggers]
+crons = ["*/15 * * * *"]
